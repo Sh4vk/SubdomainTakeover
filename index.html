@@ -16,23 +16,25 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
         }
         .moving-text {
-            animation: slideInFromRight 1s ease-in-out; /* Animation for sliding in from the right */
+            display: inline-block;
+            animation: moveText 10s linear infinite; /* Animation for moving text */
         }
-        @keyframes slideInFromRight {
-            0% {
-                transform: translateX(100%); /* Start from the right edge */
+        @keyframes moveText {
+            from {
+                transform: translateX(-100%); /* Start from the right edge */
             }
-            100% {
-                transform: translateX(0); /* Move to the left edge */
+            to {
+                transform: translateX(100%); /* Move to the left edge */
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="moving-text">Ethical Subdomain Takeover By Sh4vk</h1>
+        <h1>Ethical <span class="moving-text">Subdomain Takeover By Sh4vk</span></h1>
         <p>This subdomain has been ethically taken over to prevent malicious use. If you are the owner of this domain, please contact me to resolve this issue.</p>
         <a href="https://example.com" class="image-link" onclick="return false;">
             <img src="https://res.cloudinary.com/dlpitjizv/image/upload/q_60/01292024_What_Is_a_White_Hat_Hacker_hero_ca55555c96.jpg" alt="Ethical Hacking" />
