@@ -8,28 +8,49 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f0f0f0;
+            background-color: black; /* Set background color to black */
+            color: white; /* Set text color to white */
             padding: 50px;
         }
         .container {
-            background-color: #fff;
+            background-color: #000000cc; /* Set container background color with some transparency */
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Add a white shadow effect */
             display: inline-block;
+            position: relative;
+            width: 148mm; /* Set width to A5 size */
+            margin: 0 auto; /* Center the container */
+        }
+        .marquee {
+            display: inline-block;
+            white-space: nowrap;
+            position: absolute;
+            left: -100%; /* Start off the screen */
+            animation: marquee 10s linear infinite; /* Animation to move from left to right */
+        }
+        @keyframes marquee {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
         }
         .image-link {
             margin-top: 20px;
         }
         .image-link img {
-            width: 150px; /* Set the width of the image */
+            width: 100%; /* Make the image fill the container */
             height: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Subdomain Takeover by Sh4vk</h1>
+        <div class="marquee">
+            <h1>Subdomain Takeover by Sh4vk</h1>
+        </div>
         <p>This subdomain has been ethically taken over to prevent malicious use. If you are the owner of this domain, please contact me to resolve this issue.</p>
         <a href="https://example.com" target="_blank" class="image-link">
             <img src="https://res.cloudinary.com/dlpitjizv/image/upload/q_60/01292024_What_Is_a_White_Hat_Hacker_hero_ca55555c96.jpg" alt="Ethical Hacking" />
@@ -37,5 +58,3 @@
     </div>
 </body>
 </html>
-
-
