@@ -29,7 +29,7 @@
         <h1>Subdomain Takeover by Sh4vk</h1>
         <p>This subdomain has been ethically taken over to prevent malicious use. If you are the owner of this domain, please contact me to resolve this issue.</p>
         <a href="https://res.cloudinary.com/dlpitjizv/image/upload/q_60/01292024_What_Is_a_White_Hat_Hacker_hero_ca55555c96.jpg" target="_blank" class="image-link">
-            <img src="https://via.placeholder.com/150" alt="Ethical Hacking" />
+            <img src="https://res.cloudinary.com/dlpitjizv/image/upload/q_60/01292024_What_Is_a_White_Hat_Hacker_hero_ca55555c96.jpg" alt="Ethical Hacking" />
         </a>
     </div>
 </body>
