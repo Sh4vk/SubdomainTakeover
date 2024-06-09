@@ -10,6 +10,7 @@
             text-align: center;
             background-color: #f0f0f0;
             padding: 50px;
+            overflow: hidden; /* Ensure the body doesn't overflow */
         }
         .container {
             background-color: #fff;
@@ -17,16 +18,21 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: inline-block;
-            overflow: hidden; /* Ensure text doesn't overflow the container */
             position: relative;
             width: 80%; /* Adjust width as needed */
             margin: 0 auto; /* Center the container */
+        }
+        .marquee-container {
+            position: relative;
+            height: 50px; /* Adjust height as needed */
+            overflow: hidden; /* Hide overflow content */
         }
         .marquee {
             display: inline-block;
             white-space: nowrap;
             position: absolute;
             animation: marquee 10s linear infinite;
+            font-size: 1.5em; /* Adjust font size as needed */
         }
         @keyframes marquee {
             0% {
@@ -47,8 +53,10 @@
 </head>
 <body>
     <div class="container">
-        <div class="marquee">
-            <h1>Subdomain Takeover by Sh4vk</h1>
+        <div class="marquee-container">
+            <div class="marquee">
+                <h1>Subdomain Takeover by Sh4vk</h1>
+            </div>
         </div>
         <p>This subdomain has been ethically taken over to prevent malicious use. If you are the owner of this domain, please contact me to resolve this issue.</p>
         <a href="https://example.com" target="_blank" class="image-link">
@@ -57,3 +65,4 @@
     </div>
 </body>
 </html>
+
