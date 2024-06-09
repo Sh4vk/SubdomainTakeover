@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethical Subdomain Takeover</title>
-    <style>
+    <title>Subdomain Takeover</title>
+</head>
+<body>
+    <div class="container">
+        <h1><span id="moving-text">Subdomain Takeover By Sh4vk</span></h1>
+<style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             background-color: #f0f0f0;
             padding: 50px;
+            overflow: hidden; /* Prevents horizontal overflow */
         }
         .container {
             background-color: #fff;
@@ -17,25 +22,23 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: inline-block;
-        }
-        .moving-text {
-            display: inline-block;
+            position: relative; /* Needed for absolute positioning */
+            white-space: nowrap; /* Prevents text wrapping */
             animation: moveText 10s linear infinite; /* Animation for moving text */
+        }
+        .image-link {
+            margin-top: 20px;
         }
         @keyframes moveText {
             from {
-                transform: translateX(-100%); /* Start from the right edge */
+                left: -100%; /* Start from the right edge */
             }
             to {
-                transform: translateX(100%); /* Move to the left edge */
+                left: 100%; /* Move to the left edge */
             }
         }
     </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Ethical <span class="moving-text">Subdomain Takeover By Sh4vk</span></h1>
-        <p>This subdomain has been ethically taken over to prevent malicious use. If you are the owner of this domain, please contact me to resolve this issue.</p>
+        <p>This subdomain has been ethically taken over to prevent malicious use. If you are the owner of this domain, please contact me sh4vk@bugcrowdninja.com to resolve this issue.</p>
         <a href="https://example.com" class="image-link" onclick="return false;">
             <img src="https://res.cloudinary.com/dlpitjizv/image/upload/q_60/01292024_What_Is_a_White_Hat_Hacker_hero_ca55555c96.jpg" alt="Ethical Hacking" />
         </a>
